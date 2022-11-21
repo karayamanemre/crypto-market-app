@@ -8,7 +8,7 @@ describe('Home page test', () => {
     const view = render(
       <Provider store={store}>
         <Home />
-      </Provider>
+      </Provider>,
     );
     expect(view).toMatchSnapshot();
   });

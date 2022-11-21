@@ -13,7 +13,7 @@
     "sourceType": "module"
   },
 
-  "extends": ["plugin:react/recommended"],
+  "extends": ["plugin:react/recommended", "prettier"],
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],

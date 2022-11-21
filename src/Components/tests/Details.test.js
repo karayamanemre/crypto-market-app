@@ -8,7 +8,7 @@ describe('Details page test', () => {
     const view = render(
       <Provider store={store}>
         <Details />
-      </Provider>
+      </Provider>,
     );
     expect(view).toMatchSnapshot();
   });
