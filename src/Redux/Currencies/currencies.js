@@ -1,5 +1,4 @@
-const url =
-  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'; // eslint-disable-line
+const url ='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
 
 export let dataFilter; // eslint-disable-line
 
@@ -22,12 +21,12 @@ export const fetchCurrencies = () => async (dispatch) => {
     playload: data,
   });
 };
-
-export const filterCurrencies = (data) => {
+/* eslint-disable */
+export const filterCurrencies = () => (data) => {
   return {
     type: 'load',
     playload: data,
   };
 };
-
+/* eslint-enable */
 export default reducer;

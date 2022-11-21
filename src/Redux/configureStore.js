@@ -9,4 +9,4 @@ const rootReducer = combineReducers({
   detail: categoryReducer,
 });
 
-export const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+export const store = createStore(rootReducer, applyMiddleware(thunk, logger)); // eslint-disable-line

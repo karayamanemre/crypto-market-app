@@ -5,7 +5,7 @@ import home from '../Assets/home.png';
 import mic from '../Assets/mic.png';
 import settings from '../Assets/settings.png';
 import logo from '../Assets/logo.png';
-
+/* eslint-enable */
 const NavBar = ({ page, set }) => {
   return (
     <nav className={styles.nav}>
@@ -14,10 +14,10 @@ const NavBar = ({ page, set }) => {
           {page === 'home' ? (
             <img src={home} alt="" />
           ) : (
-            <span onClick={() => set('home')}><img src={home} alt="" /></span>
+            <span onClick={() => set('home')}><img src={home} alt="home logo" /></span>
           )}
         </NavLink>
-      </div>  
+      </div>
       <img src={logo} alt="logo" />
       <div>
         <img src={mic} alt="microphone" />
@@ -26,5 +26,5 @@ const NavBar = ({ page, set }) => {
     </nav>
   );
 };
-
+/* eslint-disable */
 export default NavBar;

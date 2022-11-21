@@ -1,20 +1,18 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchCurrencies } from '../Redux/Currencies/currencies';
-import { useSelector } from 'react-redux';
+import React, { useEffect }  from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { fetchCurrencies } from '../Redux/Currencies/currencies';
 import styles from './Styles/Home.module.css';
 import Coin from './Coin';
 import Search from './Search';
-
-const Home = ({ page, set }) => {
+/* eslint-disable */
+const Home = ({ set }) => {
   const data = useSelector((state) => state.coins);
   const dispatch = useDispatch();
   useEffect(() => {
     if (data.length === 0) dispatch(fetchCurrencies());
   }, [data.length, dispatch]);
-
+/* eslint-enable */
   return (
     <div className={styles.container}>
       <h3>Search Crypto Currencies</h3>
@@ -40,7 +38,8 @@ const Home = ({ page, set }) => {
           ))
         ) : (
           <div>
-            <h1>Loading...</h1>{' '}
+            <h1>Loading...</h1>
+            {' '}
           </div>
         )}
       </div>
