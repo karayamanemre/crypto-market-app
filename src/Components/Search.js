@@ -6,14 +6,12 @@ import styles from './Styles/Search.module.css';
 const Search = () => {
   const dispatch = useDispatch();
   return (
-    <div>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Search Cryptocurrency"
         onChange={(e) => filter(e, dispatch)}
         className={styles.search_input}
       />
-    </div>
   );
 };
 

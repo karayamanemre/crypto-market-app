@@ -14,7 +14,6 @@ const Home = ({ set }) => {
   }, [data.length, dispatch]);/* eslint-enable */
   return (
     <div className={styles.container}>
-      <h3>Search Crypto Currencies</h3>
       <Search />
       <div className={styles.list_container}>
         {data.length > 0 ? (
@@ -29,7 +28,9 @@ const Home = ({ set }) => {
                 marketRank={item.market_cap_rank}
                 image={item.image}
                 coinSymbol={item.symbol}
+                marketCap={item.market_cap}
                 currentPrice={item.current_price}
+                priceChange={item.price_change_percentage_24h}
                 imageUrl={item.image}
                 coinName={item.name}
               />

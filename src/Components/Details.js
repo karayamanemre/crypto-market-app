@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import DOMPurify from 'dompurify';
 import { fetchCategory } from '../Redux/Category/categories';
 import styles from './Styles/Details.module.css';
 
@@ -13,24 +14,33 @@ const Details = () => {
     dispatch(fetchCategory(id));
   }, [dispatch, id]);
   return (
-    <section>
       <div className={styles.container}>
-        <h1>{details.name}</h1>
-        <span>
-          Rank #
-          {details.market_cap_rank}
-        </span>
-        {details.image ? (
-          <img src={details.image.small} alt="coin logo" />
-        ) : null}
-        {details.symbol ? <p>{details.symbol.toUpperCase()}</p> : null}
-        {details.market_data ? (
-          <h1>
-            $
-            {details.market_data.current_price.usd.toLocaleString()}
-          </h1>
-        ) : null}
-        <ul>
+        <ul className={styles.main_info}>
+          <li>
+            <h1>{details.name}</h1>
+          </li>
+          <li>
+            <span>
+              Rank #
+              {details.market_cap_rank}
+            </span>
+          </li>
+          <li className={styles.img}>
+            {details.image ? (
+              <img src={details.image.small} alt="coin logo" />
+            ) : null}
+            {details.symbol ? <p>{details.symbol.toUpperCase()}</p> : null}
+          </li>
+          <li>
+            {details.market_data ? (
+              <h2>
+                Price $
+                {details.market_data.current_price.usd.toLocaleString()}
+              </h2>
+            ) : null}
+          </li>
+        </ul>
+        <ul className={styles.price_info}>
           <li>
             <h4>24 Hour Change:</h4>
             {details.market_data?.price_change_percentage_24h_in_currency
@@ -78,8 +88,13 @@ const Details = () => {
             ) : null}
           </li>
         </ul>
+        <p 
+          className={styles.description}
+          dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(
+          details.description ? details.description.en : ''),
+        }}></p>
       </div>
-    </section>
   );
 };
 

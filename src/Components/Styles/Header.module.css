@@ -1,8 +1,12 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  justify-content: center;
+  background: #282a3a;
+  padding: 15px 0;
+  height: 120px;
+  width: 100vw;
+  border-bottom: 2px solid #735f32;
 }
 
 .nav_h1 {

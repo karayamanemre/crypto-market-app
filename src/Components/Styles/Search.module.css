@@ -1,7 +1,20 @@
 .search_input {
-  border: none;
+  background-color: #282a3a;
+  max-width: 250px;
+  font-size: 18px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #735f32;
   outline: none;
-  height: 30px;
-  margin: 10px;
-  padding: 5px;
+  border-radius: 12px;
+  margin: 25px;
+}
+
+.search_input:focus {
+  color: #c69749;
+  outline-color: #c69749;
+  box-shadow: 0 0 10px #c69749;
+  transition: 0.4s;
+  transition-property: box-shadow;
 }

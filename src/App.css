@@ -8,11 +8,20 @@
 }
 
 body {
-  background: #4269b2;
+  display: flex;
+  background: #282a3a;
   color: #fff;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+}
+
+ul {
+  list-style: none;
 }
