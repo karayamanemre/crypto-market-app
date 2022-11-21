@@ -17,8 +17,9 @@ const Details = () => {
       <div className={styles.container}>
         <h1>{details.name}</h1>
         <span>
-          Rank #{
-          details.market_cap_rank}</span>
+          Rank #
+          {details.market_cap_rank}
+        </span>
         {details.image ? (
           <img src={details.image.small} alt="coin logo" />
         ) : null}
@@ -37,7 +38,7 @@ const Details = () => {
                 1,
               )
               : null}
-              {' '}
+            {' '}
             %
           </li>
           <li>

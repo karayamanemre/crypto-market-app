@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { filter } from './Filter';
+import { useDispatch } from 'react-redux';
 import styles from './Styles/Search.module.css';
 
 const Search = () => {
