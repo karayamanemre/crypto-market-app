@@ -1,0 +1,14 @@
+.coin_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 200px;
+  padding: 5px;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+}
