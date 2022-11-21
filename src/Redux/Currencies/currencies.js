@@ -1,12 +1,12 @@
 const url =
-  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'; // eslint-disable-line
 
-export let dataFilter;
+export let dataFilter; // eslint-disable-line
 
 const reducer = (state = [], action) => {
   switch (action.type) {
     case 'load':
-      state = action.playload;
+      state = action.playload; // eslint-disable-line
       return state;
     default:
       return state;

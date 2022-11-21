@@ -1,9 +1,8 @@
-import { createStore, combineReducers } from 'redux';
-import currencyReducer from './Currencies/currencies';
-import categoryReducer from './Category/categories';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import { applyMiddleware } from 'redux';
+import currencyReducer from './Currencies/currencies';
+import categoryReducer from './Category/categories';
 
 const rootReducer = combineReducers({
   coins: currencyReducer,
