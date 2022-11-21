@@ -29,6 +29,10 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm install` to install the dependencies.
 - Run `npm start` to start the app.
 
+## Video Presentation
+
+- [Video](https://www.loom.com/share/0c2d15e20f9f4f31a523c632e0c9ab2d).
+
 ## Authors
 
 👤 **Emre Karayaman**
