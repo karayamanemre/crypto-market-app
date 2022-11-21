@@ -25,3 +25,20 @@ a {
 ul {
   list-style: none;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #735f32;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c69749;
+}
