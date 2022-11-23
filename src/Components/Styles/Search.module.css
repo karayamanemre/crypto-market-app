@@ -14,7 +14,7 @@
 
 .search_input {
   background-color: #282a3a;
-  max-width: 250px;
+  width: 350px;
   font-size: 18px;
   height: 50px;
   padding: 10px;

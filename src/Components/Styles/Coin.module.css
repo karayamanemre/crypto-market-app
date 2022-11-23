@@ -10,7 +10,6 @@
 
 .coin_container:hover {
   border: 4px solid #000;
-  border-radius: 12px;
 }
 
 .coin_name {
