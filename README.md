@@ -8,6 +8,7 @@
 
 - React
 - Redux
+- CoinGecko API.
 
 ## Live Demo
 
