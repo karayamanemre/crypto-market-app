@@ -20,9 +20,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Install git in your computer.
-- Install a code editor.
-- A web browser to view the output.
+- Please install git and the code editor of your choice on your computer.
 
 ### Setup
 
