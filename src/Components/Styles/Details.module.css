@@ -5,6 +5,21 @@
   margin-top: 25px;
 }
 
+button {
+  width: 70px;
+  height: 40px;
+  border: 4px solid #263038;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background: #263038;
+  color: #fff;
+}
+
+button:hover {
+  background: #28293a;
+}
+
 .main_info {
   display: flex;
   flex-direction: column;

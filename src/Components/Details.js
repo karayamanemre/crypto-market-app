@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import DOMPurify from 'dompurify';
 import { fetchCategory } from '../Redux/Category/categories';
@@ -15,6 +15,9 @@ const Details = () => {
   }, [dispatch, id]);
   return (
       <div className={styles.container}>
+        <Link to='/'>
+          <button>Home</button>
+        </Link>
         <ul className={styles.main_info}>
           <li>
             <h1>{details.name}</h1>
