@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-- [Crypto Market App.](https://cryptomarketapp-karayamanemre.netlify.app/)
+- [Crypto Market App.](https://crypto-market-48bcb.web.app/)
 
 ## Getting Started
 
