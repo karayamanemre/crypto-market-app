@@ -4,14 +4,6 @@
   justify-content: center;
   background: #282a3a;
   padding: 15px 0;
-  height: 120px;
-  width: 100vw;
+  height: 100px;
   border-bottom: 3px solid #735f32;
-  box-shadow: 0px 0px 5px #62512b, 0 0 4px #846d3a;
-}
-
-.nav_h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
