@@ -5,7 +5,6 @@ import { store } from './Redux/configureStore';
 import Home from './Components/Home';
 import NavBar from './Components/Header';
 import Details from './Components/Details';
-import './App.css';
 
 function App() {
   const [page, setPage] = useState('home');

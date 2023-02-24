@@ -2,20 +2,21 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchCurrencies } from '../Redux/Currencies/currencies';
-import styles from './Styles/Home.module.css';
+import BackToTop from './BackToTop';
 import Coin from './Coin';
 import Search from './Search';
-/* eslint-disable */
+
 const Home = ({ set }) => {
   const data = useSelector((state) => state.coins);
   const dispatch = useDispatch();
   useEffect(() => {
     if (data.length === 0) dispatch(fetchCurrencies());
-  }, [data.length, dispatch]);/* eslint-enable */
+  }, [data.length, dispatch]);
+
   return (
-    <div className={styles.container}>
+    <div className="container flex flex-col justify-center items-center mx-auto p-4 bg-gray-100">
       <Search />
-      <div className={styles.list_container}>
+      <div className="flex flex-col gap-4 w-full">
         {data.length > 0 ? (
           data.map((item) => (
             <NavLink
@@ -37,12 +38,12 @@ const Home = ({ set }) => {
             </NavLink>
           ))
         ) : (
-          <div>
-            <h1>Loading...</h1>
-            {' '}
+          <div className="text-center">
+            <h1 className="text-2xl">Loading...</h1>
           </div>
         )}
       </div>
+      <BackToTop></BackToTop>
     </div>
   );
 };
