@@ -1,3 +1,8 @@
+@import url('https://use.typekit.net/qhv6dce.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: 'p22-mackinac-pro', serif;
+}
