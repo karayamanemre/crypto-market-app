@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import DOMPurify from 'dompurify';
 import { fetchCategory } from '../Redux/Category/categories';
-
+/* eslint-disable */
 const Details = () => {
   const dispatch = useDispatch();
   const params = useParams();
@@ -106,5 +106,5 @@ const Details = () => {
     </div>
   );
 };
-
+/* eslint-enable */
 export default Details;

@@ -26,7 +26,7 @@ const BackToTop = () => {
     <>
       {visible && (
         <div className="fixed bottom-4 right-4 z-50 bg-gray-200 w-8 flex justify-center h-8 hover:bg-gray-300">
-          <button onClick={scrollToTop}>
+          <button type="button" onClick={scrollToTop}>
             <FaArrowUp />
           </button>
         </div>

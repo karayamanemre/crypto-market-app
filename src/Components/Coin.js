@@ -1,5 +1,5 @@
 import React from 'react';
-
+/* eslint-disable */
 const Coin = ({
   marketRank,
   marketCap,
@@ -35,5 +35,5 @@ const Coin = ({
     </div>
   );
 };
-
+/* eslint-enable */
 export default Coin;

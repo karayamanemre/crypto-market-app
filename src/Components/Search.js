@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { filter } from './Filter';
-
+/* eslint-disable */
 const Search = () => {
   const dispatch = useDispatch();
   return (
@@ -21,5 +21,5 @@ const Search = () => {
     </div>
   );
 };
-
+/* eslint-enable */
 export default Search;

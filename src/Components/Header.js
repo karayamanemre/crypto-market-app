@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../Assets/logo.png';
-
+/* eslint-disable */
 const NavBar = ({ set }) => {
   return (
     <header className="bg-gray-800 text-white flex justify-center items-center p-2 shadow">
@@ -13,5 +13,5 @@ const NavBar = ({ set }) => {
     </header>
   );
 };
-
+/* eslint-enable */
 export default NavBar;

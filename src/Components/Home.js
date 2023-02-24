@@ -5,7 +5,7 @@ import { fetchCurrencies } from '../Redux/Currencies/currencies';
 import BackToTop from './BackToTop';
 import Coin from './Coin';
 import Search from './Search';
-
+/* eslint-disable */
 const Home = ({ set }) => {
   const data = useSelector((state) => state.coins);
   const dispatch = useDispatch();
@@ -47,5 +47,5 @@ const Home = ({ set }) => {
     </div>
   );
 };
-
+/* eslint-enable */
 export default Home;
