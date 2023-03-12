@@ -29,7 +29,16 @@ const Coin = ({
         </div>
         <div className="flex flex-col">
           <p className="text-gray-500 font-bold">Current Price</p>
-          <p className="font-bold">${currentPrice.toLocaleString()}</p>
+          <p className="font-bold">
+            $
+            {currentPrice.toFixed(
+              currentPrice % 1 === 0
+                ? 0
+                : (currentPrice.toString().split('.')[1] || []).length > 6
+                ? 6
+                : (currentPrice.toString().split('.')[1] || []).length,
+            )}
+          </p>
         </div>
       </div>
     </div>

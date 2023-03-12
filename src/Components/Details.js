@@ -40,7 +40,22 @@ const Details = () => {
           <div className="mb-4">
             {details.market_data?.current_price && (
               <h2 className="text-2xl font-bold">
-                Price ${details.market_data.current_price.usd.toLocaleString()}
+                Price $
+                {details.market_data.current_price.usd.toFixed(
+                  details.market_data.current_price.usd % 1 === 0
+                    ? 0
+                    : (
+                        details.market_data.current_price.usd
+                          .toString()
+                          .split('.')[1] || []
+                      ).length > 8
+                    ? 8
+                    : (
+                        details.market_data.current_price.usd
+                          .toString()
+                          .split('.')[1] || []
+                      ).length,
+                )}
               </h2>
             )}
           </div>
